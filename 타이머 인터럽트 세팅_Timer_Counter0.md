@@ -16,22 +16,22 @@
     ![image](https://user-images.githubusercontent.com/106857769/198841431-afaefc54-0d68-4e65-baf6-88b9c0f5bb9b.png)
 
 
-# (TCNT0)
+# Timer/Counter (TCNT0)
   - Total
     ![image](https://user-images.githubusercontent.com/106857769/198841547-764cb50f-a112-4611-b013-80651ba145d7.png)
 
 
 
-# (OCR0)
+# Output Compare Register (OCR0)
   - Total
     ![image](https://user-images.githubusercontent.com/106857769/198841563-627688fa-b150-4d4b-9df9-79013c333901.png)
 
 
-# (TIFR)
+#  Timer Interrupt Flag Register (TIFR)
   - Total
     ![image](https://user-images.githubusercontent.com/106857769/198841611-ce9e49f4-9bbc-4925-95f4-93ebcd8e4aa9.png)
 
 
-# (TIMSK)
+# Timer Interrupt Mask Register (TIMSK)
   - Total
     ![image](https://user-images.githubusercontent.com/106857769/198841597-6619fa70-e88b-4f54-b374-fc6467cdb8b1.png)
