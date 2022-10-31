@@ -1,0 +1,70 @@
+~~~
+/*
+ * 1031.c
+ *
+ * Created: 2022-10-31 오후 2:57:00
+ * Author : display - 2414
+ */ 
+
+#define F_CPU 16000000
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <compat/deprecated.h>
+volatile unsigned char led=0b11110000;
+volatile int start = 1;
+void init_port(){
+	DDRA=0xff;
+	cbi(DDRD,0);
+	PORTA=0xff;
+}
+
+void init_timer1_ovf(){
+	TCCR1A=0x00;
+	TCCR1B=0b00000100;
+	TCCR1C=0x00;
+	
+	TCNT1=65536-62500;
+	TIMSK=0x04;
+
+	
+		
+	EIMSK=0x01;
+	ETIFR=0x00;
+	EICRA=0x02;
+	EICRB=0x00;
+	
+
+}
+ISR(INT0_vect){
+	if (start==1)
+	{
+		start=0;
+	}else{
+		start=1;
+	}
+}
+
+ISR(TIMER1_OVF_vect){
+	TCNT1=65536-62500;
+	if (start==1)
+	{
+		PORTA=led;
+		led=~led;
+	}
+	
+}
+
+int main(void)
+{
+	
+	init_port();
+	init_timer1_ovf();
+	sei();
+	
+    while (1) 
+    {
+    }
+}
+
+
+~~~
