@@ -4,7 +4,8 @@
   
   - WGM01:0
     ![image](https://user-images.githubusercontent.com/106857769/198841071-64327d9a-fcb7-4d67-a65a-958ca2e3eec6.png)
-    ![image](https://user-images.githubusercontent.com/106857769/198841124-52b0d128-9b61-4972-906b-bff04131c3f6.png)  
+    ![image](https://user-images.githubusercontent.com/106857769/198841124-52b0d128-9b61-4972-906b-bff04131c3f6.png)
+    - 오버플로우일지 ctc일지 지정
   
   - COM01:0
     ![image](https://user-images.githubusercontent.com/106857769/198841299-ac8fd375-7e29-4bc5-b39e-463d4ad26dab.png)
