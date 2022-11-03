@@ -58,8 +58,8 @@
   - Total
     ![image](https://user-images.githubusercontent.com/106857769/198841597-6619fa70-e88b-4f54-b374-fc6467cdb8b1.png)
     
-     - 모드 설정 (overflow / ctc)
-     
+     - 모드 설정 (overflow / ctc) : TOIE
+       
        TIMSK=0x01;//0000 0001 timer0/overflow	
        
        TIMSK= 0x00;//0000 0000 timer0/CTC 이거 맞는건지 모르겠넹..
